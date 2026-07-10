@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LensCraft | Luxury Photography Studio</title>
+
+    <meta name="description"
+        content="Luxury Photography Studio for Portraits, Weddings, Events and Corporate Photography">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Tailwind -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+
+        tailwind.config = {
+
+            darkMode: "class",
+
+            theme: {
+
+                extend: {
+
+                    fontFamily: {
+
+                        heading: ["Cormorant Garamond"],
+
+                        body: ["Inter"]
+
+                    },
+
+                    colors: {
+
+                        primary: "#111111",
+
+                        secondary: "#f8f8f8"
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body class="font-body bg-white text-gray-900 dark:bg-black dark:text-white transition duration-500">
+
+
+
+<!-- ================= HEADER ================= -->
+
+<header id="navbar"
+    class="fixed top-0 left-0 w-full z-50 bg-[#111111] dark:bg-black border-b border-white/10 shadow-lg transition-all duration-300">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="flex items-center justify-between h-24 px-6 lg:px-10">
+
+            <!-- Logo -->
+            <a href="#" class="text-4xl font-heading tracking-wide text-white">
+                LensCraft
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-10">
+
+                <!-- Home Dropdown -->
+                <div class="relative group">
+
+                    <button
+                        class="uppercase text-sm tracking-[3px] text-white hover:text-gray-300 transition duration-300">
+                        Home
+                        <i
+                            class="fa-solid fa-angle-down text-xs ml-1 transition duration-300 group-hover:rotate-180"></i>
+                    </button>
+
+                    <div
+                        class="absolute left-0 top-full mt-5 w-60 bg-white dark:bg-[#1a1a1a] rounded-2xl shadow-2xl overflow-hidden opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300">
+
+                        <a href="index.html"
+                            class="block px-6 py-4 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-[#2b2b2b]">
+                            Home 1
+                        </a>
+
+                        <a href="home2.html"
+                            class="block px-6 py-4 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-[#2b2b2b]">
+                            Home 2
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="about.html"
+                    class="uppercase text-sm tracking-[3px] text-white hover:text-gray-300 transition duration-300">
+                    About
+                </a>
+
+                <a href="services.html"
+    class="uppercase text-sm tracking-[3px] text-white hover:text-gray-300 transition duration-300">
+    Services
+</a>
+
+<a href="pricing.html"
+    class="uppercase text-sm tracking-[3px] text-white hover:text-gray-300 transition duration-300">
+    Pricing
+</a>
+
+<a href="portfolio.html"
+    class="uppercase text-sm tracking-[3px] text-white hover:text-gray-300 transition duration-300">
+    Portfolio
+</a>
+
+                <a href="blog.html"
+                    class="uppercase text-sm tracking-[3px] text-white hover:text-gray-300 transition duration-300">
+                    Blog
+                </a>
+
+                <a href="contact.html"
+                    class="uppercase text-sm tracking-[3px] text-white hover:text-gray-300 transition duration-300">
+                    Contact
+                </a>
+
+            </nav>
+
+            <!-- Right Side -->
+            <div class="hidden lg:flex items-center gap-5">
+
+                <!-- Dark Mode -->
+                <button id="themeBtn"
+                    class="text-white hover:text-gray-300 transition">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button id="rtlBtn"
+                    class="text-white uppercase tracking-[3px] text-xs hover:text-gray-300 transition">
+                    RTL
+                </button>
+
+                <!-- Button -->
+                <a href="contact.html"
+                    class="bg-white text-black px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-200 transition duration-300">
+                    Book Session
+                </a>
+
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="lg:hidden flex items-center gap-4">
+                <!-- Dark Mode Mobile -->
+                <button id="themeBtnMobile"
+                    class="text-white hover:text-gray-300 transition">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- RTL Mobile -->
+                <button id="rtlBtnMobile"
+                    class="text-white uppercase tracking-[3px] text-xs hover:text-gray-300 transition">
+                    RTL
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn"
+                    class="text-white text-3xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- <div id="mobileMenu" class="hidden lg:hidden bg-[#111111] border-t border-white/10 px-6 py-8 space-y-6 fixed top-24 left-0 w-full z-40">
+    <nav class="space-y-4">
+        <a href="index.html" class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">Home</a>
+        <a href="about%20.html" class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">About</a>
+        <a href="#services" class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">Services</a>
+        <a href="#portfolio" class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">Portfolio</a>
+        <a href="#blog" class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">Blog</a>
+        <a href="#contact" class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">Contact</a>
+    </nav>
+</div>
+ -->
+
+
+
+<div id="mobileMenu"
+    class="hidden lg:hidden bg-[#111111] border-t border-white/10 px-6 py-8 space-y-6 fixed top-24 left-0 w-full z-40">
+
+    <nav class="space-y-4">
+
+        <!-- Home Dropdown -->
+        <details class="group">
+            <summary
+                class="flex items-center justify-between cursor-pointer text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2 list-none">
+                Home
+
+                <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19 9l-7 7-7-7" />
+                </svg>
+            </summary>
+
+            <div class="mt-2 ml-4 border-l border-white/20 pl-4 space-y-2">
+                <a href="index.html"
+                    class="block text-gray-300 hover:text-white transition py-1">
+                    Home 1
+                </a>
+
+                <a href="home2.html"
+                    class="block text-gray-300 hover:text-white transition py-1">
+                    Home 2
+                </a>
+            </div>
+        </details>
+
+        <!-- Other Links -->
+        <a href="about.html"
+            class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">
+            About
+        </a>
+
+        <a href="services.html"
+    class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">
+    Services
+</a>
+
+<a href="pricing.html"
+    class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">
+    Pricing
+</a>
+
+<a href="portfolio.html"
+    class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">
+    Portfolio
+</a>
+
+        <a href="blog.html"
+            class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">
+            Blog
+        </a>
+
+        <a href="contact.html"
+            class="block text-white uppercase tracking-[3px] text-sm font-medium hover:text-gray-300 transition py-2 px-2">
+            Contact
+        </a>
+
+    </nav>
+
+</div>
+
+
+
+
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div id="mobileMenu"
+    class="hidden lg:hidden bg-[#111111] border-t border-white/10 px-6 py-8 space-y-6 fixed top-24 left-0 w-full z-40">
+
+    <nav class="space-y-4">
+
+        <!-- Home Dropdown -->
+
+        <details class="group">
+
+            <summary
+                class="flex items-center justify-between cursor-pointer text-white uppercase tracking-[3px] text-sm font-medium py-2 list-none">
+
+                Home
+
+                <i class="fa-solid fa-angle-down transition group-open:rotate-180"></i>
+
+            </summary>
+
+            <div class="mt-3 ml-4 border-l border-white/20 pl-4 space-y-2">
+
+                <a href="index.html"
+                    class="block text-gray-300 hover:text-white">
+
+                    Home 1
+
+                </a>
+
+                <a href="home2.html"
+                    class="block text-gray-300 hover:text-white">
+
+                    Home 2
+
+                </a>
+
+            </div>
+
+        </details>
+
+        <a href="about.html"
+            class="block text-white uppercase tracking-[3px] text-sm py-2">
+
+            About
+
+        </a>
+
+        <!-- Active -->
+
+        <a href="services.html"
+            class="block text-yellow-300 uppercase tracking-[3px] text-sm font-semibold py-2">
+
+            Services
+
+        </a>
+
+        <a href="pricing.html"
+            class="block text-white uppercase tracking-[3px] text-sm py-2">
+
+            Pricing
+
+        </a>
+
+        <a href="portfolio.html"
+            class="block text-white uppercase tracking-[3px] text-sm py-2">
+
+            Portfolio
+
+        </a>
+
+        <a href="blog.html"
+            class="block text-white uppercase tracking-[3px] text-sm py-2">
+
+            Blog
+
+        </a>
+
+        <a href="contact.html"
+            class="block text-white uppercase tracking-[3px] text-sm py-2">
+
+            Contact
+
+        </a>
+
+    </nav>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= SERVICE OVERVIEW ================= -->
+
+<section class="py-28 bg-white dark:bg-black">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Image -->
+
+            <div>
+
+                <img src="images/service-detail-1.jpg"
+                    class="rounded-[30px] w-full h-[600px] object-cover shadow-xl">
+
+            </div>
+
+            <!-- Content -->
+
+            <div>
+
+                <span class="uppercase tracking-[6px] text-gray-500">
+
+                    Wedding Photography
+
+                </span>
+
+                <h2 class="font-heading text-5xl mt-6 leading-tight">
+
+                    Every Moment
+                    Deserves To
+                    Be Remembered
+
+                </h2>
+
+                <p class="mt-8 text-lg leading-9 text-gray-600 dark:text-gray-300">
+
+                    Every smile, every tear and every celebration deserves
+                    to be preserved with elegance. Our wedding photography
+                    blends storytelling with artistic composition to create
+                    timeless memories that you'll cherish forever.
+
+                </p>
+
+                <!-- Features -->
+
+                <div class="grid grid-cols-2 gap-5 mt-10">
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-check mt-1"></i>
+
+                        <span>Full Day Coverage</span>
+
+                    </div>
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-check mt-1"></i>
+
+                        <span>500+ Edited Photos</span>
+
+                    </div>
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-check mt-1"></i>
+
+                        <span>Premium Album</span>
+
+                    </div>
+
+                    <div class="flex gap-3">
+
+                        <i class="fa-solid fa-check mt-1"></i>
+
+                        <span>Online Gallery</span>
+
+                    </div>
+
+                </div>
+
+                <a href="contact.html"
+                    class="inline-block mt-10 px-8 py-4 rounded-full bg-black text-white dark:bg-white dark:text-black hover:scale-105 duration-300">
+
+                    Book This Service
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= WHAT'S INCLUDED ================= -->
+
+<section class="py-28 bg-[#f8f8f8] dark:bg-[#111111]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="text-center">
+
+            <span class="uppercase tracking-[6px] text-gray-500">
+
+                What's Included
+
+            </span>
+
+            <h2 class="font-heading text-5xl mt-6">
+
+                Everything You Need
+                For Your Perfect Day
+
+            </h2>
+
+            <p class="max-w-3xl mx-auto mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+
+                Every package is thoughtfully designed to deliver a seamless
+                photography experience from the first consultation to the
+                final gallery delivery.
+
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+
+            <!-- Card -->
+
+            <div class="bg-white dark:bg-[#1a1a1a] rounded-[25px] p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="w-16 h-16 rounded-full bg-black text-white dark:bg-white dark:text-black flex items-center justify-center text-2xl">
+
+                    <i class="fa-solid fa-camera"></i>
+
+                </div>
+
+                <h3 class="font-heading text-3xl mt-8">
+
+                    Full Coverage
+
+                </h3>
+
+                <p class="mt-5 leading-8 text-gray-600 dark:text-gray-300">
+
+                    From preparation to the final celebration,
+                    every important moment is beautifully documented.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="bg-white dark:bg-[#1a1a1a] rounded-[25px] p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="w-16 h-16 rounded-full bg-black text-white dark:bg-white dark:text-black flex items-center justify-center text-2xl">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                </div>
+
+                <h3 class="font-heading text-3xl mt-8">
+
+                    Premium Editing
+
+                </h3>
+
+                <p class="mt-5 leading-8 text-gray-600 dark:text-gray-300">
+
+                    Every image is professionally retouched with
+                    cinematic colors and luxury finishing.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="bg-white dark:bg-[#1a1a1a] rounded-[25px] p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="w-16 h-16 rounded-full bg-black text-white dark:bg-white dark:text-black flex items-center justify-center text-2xl">
+
+                    <i class="fa-solid fa-images"></i>
+
+                </div>
+
+                <h3 class="font-heading text-3xl mt-8">
+
+                    Online Gallery
+
+                </h3>
+
+                <p class="mt-5 leading-8 text-gray-600 dark:text-gray-300">
+
+                    Receive a beautiful private gallery to
+                    download, share and preserve your memories.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= OUR PROCESS ================= -->
+
+<section class="py-28 bg-white dark:bg-black">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="text-center">
+
+            <span class="uppercase tracking-[6px] text-gray-500">
+
+                Our Process
+
+            </span>
+
+            <h2 class="font-heading text-5xl mt-6">
+
+                From Booking To
+                Beautiful Memories
+
+            </h2>
+
+            <p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600 dark:text-gray-300 leading-8">
+
+                Our simple four-step process ensures every client enjoys a
+                relaxed, professional and unforgettable photography experience.
+
+            </p>
+
+        </div>
+
+        <!-- Timeline -->
+
+        <div class="grid lg:grid-cols-4 gap-8 mt-20">
+
+            <!-- Step 1 -->
+
+            <div class="relative text-center">
+
+                <div class="w-20 h-20 mx-auto rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center text-2xl font-bold">
+
+                    01
+
+                </div>
+
+                <h3 class="font-heading text-3xl mt-8">
+
+                    Consultation
+
+                </h3>
+
+                <p class="mt-4 text-gray-600 dark:text-gray-300 leading-8">
+
+                    We discuss your vision, preferred style and event details
+                    to create the perfect photography plan.
+
+                </p>
+
+            </div>
+
+            <!-- Step 2 -->
+
+            <div class="relative text-center">
+
+                <div class="w-20 h-20 mx-auto rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center text-2xl font-bold">
+
+                    02
+
+                </div>
+
+                <h3 class="font-heading text-3xl mt-8">
+
+                    Photography
+
+                </h3>
+
+                <p class="mt-4 text-gray-600 dark:text-gray-300 leading-8">
+
+                    Every meaningful moment is captured naturally with elegant
+                    composition and cinematic storytelling.
+
+                </p>
+
+            </div>
+
+            <!-- Step 3 -->
+
+            <div class="relative text-center">
+
+                <div class="w-20 h-20 mx-auto rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center text-2xl font-bold">
+
+                    03
+
+                </div>
+
+                <h3 class="font-heading text-3xl mt-8">
+
+                    Editing
+
+                </h3>
+
+                <p class="mt-4 text-gray-600 dark:text-gray-300 leading-8">
+
+                    Every photograph is professionally edited with luxury color
+                    grading and refined retouching.
+
+                </p>
+
+            </div>
+
+            <!-- Step 4 -->
+
+            <div class="relative text-center">
+
+                <div class="w-20 h-20 mx-auto rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center text-2xl font-bold">
+
+                    04
+
+                </div>
+
+                <h3 class="font-heading text-3xl mt-8">
+
+                    Delivery
+
+                </h3>
+
+                <p class="mt-4 text-gray-600 dark:text-gray-300 leading-8">
+
+                    Receive your beautifully edited gallery ready to download,
+                    print and cherish forever.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= FEATURED MOMENTS ================= -->
+
+<section class="py-28 bg-[#f8f8f8] dark:bg-[#111111]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="text-center">
+
+            <span class="uppercase tracking-[6px] text-gray-500">
+
+                Featured Moments
+
+            </span>
+
+            <h2 class="font-heading text-5xl mt-6">
+
+                A Glimpse Of
+                Our Recent Work
+
+            </h2>
+
+            <p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600 dark:text-gray-300 leading-8">
+
+                Every photograph tells a unique story. Here are a few
+                timeless moments captured through our lens.
+
+            </p>
+
+        </div>
+
+        <!-- Gallery -->
+
+        <div class="grid lg:grid-cols-2 gap-8 mt-20">
+
+            <!-- Large Image -->
+
+            <div>
+
+                <img src="images/service-gallery1.jpg"
+                    class="w-full h-[650px] object-cover rounded-[30px] shadow-xl hover:scale-[1.02] duration-500">
+
+            </div>
+
+            <!-- Right Images -->
+
+            <div class="grid gap-8">
+
+                <img src="images/service-gallery2.jpg"
+                    class="w-full h-[310px] object-cover rounded-[30px] shadow-xl hover:scale-[1.02] duration-500">
+
+                <img src="images/service-gallery3.jpg"
+                    class="w-full h-[310px] object-cover rounded-[30px] shadow-xl hover:scale-[1.02] duration-500">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-[#0d0d0d] text-gray-300 pt-24">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+            <!-- Logo -->
+
+            <div>
+
+                <h2 class="font-heading text-4xl text-white">
+
+                    LensCraft
+
+                </h2>
+
+                <p class="mt-6 leading-8">
+
+                    Capturing timeless memories with elegance and creativity.
+                    Portraits, Weddings, Events and Corporate Photography.
+
+                </p>
+
+                <div class="flex gap-4 mt-8 text-xl">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div>
+
+                <h3 class="text-white text-xl font-semibold mb-6">
+
+                    Quick Links
+
+                </h3>
+
+                <ul class="space-y-4">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="pricing.html">Pricing</a></li>
+
+                    <li><a href="portfolio.html">Portfolio</a></li>
+
+                    <li><a href="blog.html">Blog</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+
+            <div>
+
+                <h3 class="text-white text-xl font-semibold mb-6">
+
+                    Services
+
+                </h3>
+
+                <ul class="space-y-4">
+
+                    <li>Portrait Photography</li>
+
+                    <li>Wedding Photography</li>
+
+                    <li>Family Photography</li>
+
+                    <li>Corporate Events</li>
+
+                    <li>Outdoor Sessions</li>
+
+                    <li>Newborn Photography</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3 class="text-white text-xl font-semibold mb-6">
+
+                    Contact
+
+                </h3>
+
+                <ul class="space-y-5">
+
+                    <li>
+
+                        <i class="fa-solid fa-location-dot mr-2"></i>
+
+                        Chennai, Tamil Nadu
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-phone mr-2"></i>
+
+                        +91 98765 43210
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-envelope mr-2"></i>
+
+                        info@lenscraft.com
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-clock mr-2"></i>
+
+                        Mon - Sat : 9 AM - 7 PM
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+
+        <div class="border-t border-gray-700 mt-16 py-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-5">
+
+                <p>
+
+                    © 2026 LensCraft Photography Studio. All Rights Reserved.
+
+                </p>
+
+                <div class="flex gap-8">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+// Mobile Menu
+
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if(menuBtn && mobileMenu){
+
+    menuBtn.onclick = ()=>{
+
+        mobileMenu.classList.toggle("hidden");
+
+    }
+
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+
+    mobileLinks.forEach(link=>{
+
+        link.addEventListener("click",()=>{
+
+            mobileMenu.classList.add("hidden");
+
+        });
+
+    });
+
+}
+
+// Desktop Dark Mode
+
+const themeBtn=document.getElementById("themeBtn");
+
+if(themeBtn){
+
+    themeBtn.onclick=()=>{
+
+        document.documentElement.classList.toggle("dark");
+
+    }
+
+}
+
+// Mobile Dark Mode
+
+const themeBtnMobile=document.getElementById("themeBtnMobile");
+
+if(themeBtnMobile){
+
+    themeBtnMobile.onclick=()=>{
+
+        document.documentElement.classList.toggle("dark");
+
+    }
+
+}
+
+// Desktop RTL
+
+const rtlBtn=document.getElementById("rtlBtn");
+
+if(rtlBtn){
+
+    rtlBtn.onclick=()=>{
+
+        document.documentElement.dir =
+        document.documentElement.dir==="ltr" ? "rtl" : "ltr";
+
+    }
+
+}
+
+// Mobile RTL
+
+const rtlBtnMobile=document.getElementById("rtlBtnMobile");
+
+if(rtlBtnMobile){
+
+    rtlBtnMobile.onclick=()=>{
+
+        document.documentElement.dir =
+        document.documentElement.dir==="ltr" ? "rtl" : "ltr";
+
+    }
+
+}
+
+// Navbar Scroll Effect
+
+const navbar=document.getElementById("navbar");
+
+window.addEventListener("scroll",()=>{
+
+    if(navbar){
+
+        if(window.scrollY>50){
+
+            navbar.classList.add("bg-black/90","backdrop-blur-xl");
+
+        }
+
+        else{
+
+            navbar.classList.remove("bg-black/90","backdrop-blur-xl");
+
+        }
+
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>

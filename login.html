@@ -349,41 +349,142 @@
 
 
 
-<!-- ================= BLOG HERO ================= -->
 
-<section class="relative h-[75vh] flex items-center justify-center overflow-hidden">
+
+
+<!-- ================= LOGIN SECTION ================= -->
+
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-20">
 
     <!-- Background -->
 
-    <img src="image/p55.jpg"
+    <img src="images/login-bg.jpg"
         class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- Overlay -->
 
     <div class="absolute inset-0 bg-black/65"></div>
 
+    <!-- Blur Shapes -->
+
+    <div class="absolute top-24 left-20 w-72 h-72 rounded-full bg-white/10 blur-3xl"></div>
+
+    <div class="absolute bottom-20 right-20 w-80 h-80 rounded-full bg-white/10 blur-3xl"></div>
+
     <!-- Content -->
 
-    <div class="relative z-10 text-center px-6">
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full">
 
-        <span class="uppercase tracking-[8px] text-gray-300">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
 
-            LensCraft Journal
+            <!-- Left -->
 
-        </span>
+            <div>
 
-        <h1 class="font-heading text-6xl lg:text-8xl text-white mt-8">
+                <span class="uppercase tracking-[6px] text-gray-300">
 
-            Stories,
-            Inspiration &
-            Creativity
+                    Welcome Back
 
-        </h1>
+                </span>
 
-        <p class="mt-8 text-xl text-gray-300 max-w-3xl mx-auto leading-9">
+                <h1 class="font-heading text-6xl lg:text-8xl text-white mt-8 leading-tight">
 
-            Discover photography tips, behind-the-scenes stories,
-            editing techniques and inspiration from our latest projects.
+                    Sign In
+                    To
+                    LensCraft
 
-        </p>
+                </h1>
+
+                <p class="mt-8 text-xl text-gray-300 leading-9 max-w-xl">
+
+                    Access your account to manage bookings,
+                    explore exclusive galleries and stay connected
+                    with your photography journey.
+
+                </p>
+
+            </div>
+
+            <!-- Login Card -->
+
+            <div
+                class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-[40px] p-10 lg:p-14 shadow-2xl">
+
+                <h2 class="font-heading text-4xl text-white mb-10">
+
+                    Login
+
+                </h2>
+
+                <form class="space-y-6">
+
+                    <!-- Email -->
+
+                    <div>
+
+                        <label class="block text-gray-200 mb-3">
+
+                            Email Address
+
+                        </label>
+
+                        <input type="email"
+                            placeholder="Enter your email"
+                            class="w-full rounded-full px-6 py-4 bg-white/10 border border-white/20 text-white placeholder:text-gray-300 focus:outline-none focus:border-white">
+
+                    </div>
+
+                    <!-- Password -->
+
+                    <div>
+
+                        <label class="block text-gray-200 mb-3">
+
+                            Password
+
+                        </label>
+
+                        <input type="password"
+                            placeholder="Enter your password"
+                            class="w-full rounded-full px-6 py-4 bg-white/10 border border-white/20 text-white placeholder:text-gray-300 focus:outline-none focus:border-white">
+
+                    </div>
+
+                    <!-- Options -->
+
+                    <div class="flex items-center justify-between text-sm">
+
+                        <label class="flex items-center gap-2 text-gray-300">
+
+                            <input type="checkbox">
+
+                            Remember Me
+
+                        </label>
+
+                        <a href="#"
+                            class="text-white hover:underline">
+
+                            Forgot Password?
+
+                        </a>
+
+                    </div>
+
+                    <!-- Button -->
+
+                    <button
+                        class="w-full py-4 rounded-full bg-white text-black font-semibold hover:scale-105 duration-300">
+
+                        Sign In
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -399,70 +500,87 @@
 
 
 
-<!-- ================= FEATURED ARTICLE ================= -->
 
-<section class="py-32 bg-white dark:bg-black">
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+<!-- ================= EXTRA LOGIN OPTIONS ================= -->
 
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
+<section class="pb-28 bg-white dark:bg-black">
 
-            <!-- Image -->
+    <div class="max-w-5xl mx-auto px-6">
 
-            <div class="overflow-hidden rounded-[40px]">
+        <div class="grid lg:grid-cols-2 gap-8">
 
-                <img src="image/p56.jpg"
-                    class="w-full h-[650px] object-cover hover:scale-105 duration-700">
+            <!-- Social Login -->
 
-            </div>
+            <div class="bg-[#f8f8f8] dark:bg-[#151515] rounded-[35px] p-10">
 
-            <!-- Content -->
+                <h3 class="font-heading text-4xl mb-8">
 
-            <div>
+                    Quick Login
 
-                <span class="uppercase tracking-[6px] text-gray-500">
+                </h3>
 
-                    Featured Story
+                <div class="space-y-5">
 
-                </span>
+                    <button
+                        class="w-full flex items-center justify-center gap-4 border border-gray-300 dark:border-gray-700 rounded-full py-4 hover:bg-black hover:text-white transition duration-300">
 
-                <h2 class="font-heading text-5xl lg:text-6xl mt-6 leading-tight">
+                        <i class="fab fa-google text-xl"></i>
 
-                    The Art Of
-                    Capturing
-                    Real Emotions
+                        Continue with Google
 
-                </h2>
+                    </button>
 
-                <p class="mt-8 text-lg leading-9 text-gray-600 dark:text-gray-300">
+                    <button
+                        class="w-full flex items-center justify-center gap-4 border border-gray-300 dark:border-gray-700 rounded-full py-4 hover:bg-black hover:text-white transition duration-300">
 
-                    Great photography isn't about perfect poses—
-                    it's about preserving authentic emotions.
-                    Here's how we create timeless photographs that
-                    tell unforgettable stories.
+                        <i class="fab fa-facebook-f text-xl"></i>
 
-                </p>
+                        Continue with Facebook
 
-                <div class="flex items-center gap-6 mt-10">
+                    </button>
 
-                    <span class="text-gray-500">
+                    <button
+                        class="w-full flex items-center justify-center gap-4 border border-gray-300 dark:border-gray-700 rounded-full py-4 hover:bg-black hover:text-white transition duration-300">
 
-                        📅 June 18, 2026
+                        <i class="fab fa-apple text-xl"></i>
 
-                    </span>
+                        Continue with Apple
 
-                    <span class="text-gray-500">
-
-                        • 8 min read
-
-                    </span>
+                    </button>
 
                 </div>
 
-                <a href="blog-details.html"
-                    class="inline-block mt-12 px-8 py-4 rounded-full bg-black text-white dark:bg-white dark:text-black hover:scale-105 duration-300">
+            </div>
 
-                    Read Article
+            <!-- Register CTA -->
+
+            <div class="bg-[#111111] rounded-[35px] p-10 text-white flex flex-col justify-center">
+
+                <span class="uppercase tracking-[5px] text-gray-400">
+
+                    New Here?
+
+                </span>
+
+                <h3 class="font-heading text-5xl mt-6">
+
+                    Create Your
+                    Account
+
+                </h3>
+
+                <p class="mt-6 text-gray-300 leading-8">
+
+                    Join LensCraft to manage your bookings,
+                    download your galleries and receive exclusive updates.
+
+                </p>
+
+                <a href="register.html"
+                    class="mt-10 inline-block w-fit px-8 py-4 rounded-full bg-white text-black font-semibold hover:scale-105 duration-300">
+
+                    Create Account
 
                 </a>
 
@@ -474,199 +592,65 @@
 
 </section>
 
+<!-- ================= WHY LOGIN ================= -->
 
-
-
-
-
-
-
-
-
-
-
-<!-- ================= LATEST STORIES ================= -->
-
-<section class="py-32 bg-[#f8f8f8] dark:bg-[#111111]">
+<section class="pb-32 bg-white dark:bg-black">
 
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
 
-        <!-- Heading -->
+        <div class="grid md:grid-cols-3 gap-8">
 
-        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-16">
+            <div class="text-center p-10 rounded-[30px] bg-[#f8f8f8] dark:bg-[#151515]">
 
-            <div>
+                <i class="fa-solid fa-image text-4xl mb-6"></i>
 
-                <span class="uppercase tracking-[6px] text-gray-500">
+                <h3 class="font-heading text-3xl">
 
-                    Latest Stories
+                    Private Galleries
 
-                </span>
+                </h3>
 
-                <h2 class="font-heading text-5xl lg:text-6xl mt-5">
+                <p class="mt-5 text-gray-600 dark:text-gray-300">
 
-                    Fresh From
-                    Our Journal
+                    Secure access to your exclusive photo collections.
 
-                </h2>
-
-            </div>
-
-            <a href="#"
-                class="mt-8 lg:mt-0 text-lg hover:underline">
-
-                View All Articles →
-
-            </a>
-
-        </div>
-
-        <!-- Grid -->
-
-        <div class="grid lg:grid-cols-12 gap-8">
-
-            <!-- Large Card -->
-
-            <div class="lg:col-span-7 group">
-
-                <div class="overflow-hidden rounded-[35px]">
-
-                    <img src="image/p57.jpg"
-                        class="w-full h-[650px] object-cover duration-700 group-hover:scale-105">
-
-                </div>
-
-                <div class="mt-8">
-
-                    <span class="uppercase tracking-[5px] text-gray-500">
-
-                        Wedding
-
-                    </span>
-
-                    <h3 class="font-heading text-4xl mt-4">
-
-                        10 Tips For A Perfect Wedding Photography Timeline
-
-                    </h3>
-
-                    <p class="mt-5 text-gray-600 dark:text-gray-300 leading-8">
-
-                        Learn how proper planning creates relaxed,
-                        natural photographs throughout your wedding day.
-
-                    </p>
-
-                    <a href="blog-details.html"
-                        class="inline-block mt-8 font-semibold hover:underline">
-
-                        Read Story →
-
-                    </a>
-
-                </div>
+                </p>
 
             </div>
 
-            <!-- Right Column -->
+            <div class="text-center p-10 rounded-[30px] bg-[#f8f8f8] dark:bg-[#151515]">
 
-            <div class="lg:col-span-5 space-y-8">
+                <i class="fa-solid fa-calendar-check text-4xl mb-6"></i>
 
-                <!-- Card -->
+                <h3 class="font-heading text-3xl">
 
-                <div class="flex gap-6 group">
+                    Easy Bookings
 
-                    <img src="image/p58.jpg"
-                        class="w-44 h-40 rounded-[25px] object-cover">
+                </h3>
 
-                    <div>
+                <p class="mt-5 text-gray-600 dark:text-gray-300">
 
-                        <span class="uppercase tracking-[4px] text-gray-500 text-sm">
+                    Schedule and manage photography sessions anytime.
 
-                            Portrait
+                </p>
 
-                        </span>
+            </div>
 
-                        <h4 class="font-heading text-3xl mt-3">
+            <div class="text-center p-10 rounded-[30px] bg-[#f8f8f8] dark:bg-[#151515]">
 
-                            Choosing The Perfect Outdoor Location
+                <i class="fa-solid fa-cloud-arrow-down text-4xl mb-6"></i>
 
-                        </h4>
+                <h3 class="font-heading text-3xl">
 
-                        <a href="blog-details.html"
-                            class="inline-block mt-4 hover:underline">
+                    Instant Downloads
 
-                            Read →
+                </h3>
 
-                        </a>
+                <p class="mt-5 text-gray-600 dark:text-gray-300">
 
-                    </div>
+                    Download your edited photos in high resolution.
 
-                </div>
-
-                <!-- Card -->
-
-                <div class="flex gap-6 group">
-
-                    <img src="image/p59.jpg"
-                        class="w-44 h-40 rounded-[25px] object-cover">
-
-                    <div>
-
-                        <span class="uppercase tracking-[4px] text-gray-500 text-sm">
-
-                            Editing
-
-                        </span>
-
-                        <h4 class="font-heading text-3xl mt-3">
-
-                            Creating A Cinematic Color Palette
-
-                        </h4>
-
-                        <a href="blog-details.html"
-                            class="inline-block mt-4 hover:underline">
-
-                            Read →
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- Card -->
-
-                <div class="flex gap-6 group">
-
-                    <img src="image/p60.jpg"
-                        class="w-44 h-40 rounded-[25px] object-cover">
-
-                    <div>
-
-                        <span class="uppercase tracking-[4px] text-gray-500 text-sm">
-
-                            Gear
-
-                        </span>
-
-                        <h4 class="font-heading text-3xl mt-3">
-
-                            What's Inside My Camera Bag In 2026
-
-                        </h4>
-
-                        <a href="blog-details.html"
-                            class="inline-block mt-4 hover:underline">
-
-                            Read →
-
-                        </a>
-
-                    </div>
-
-                </div>
+                </p>
 
             </div>
 
@@ -686,115 +670,95 @@
 
 
 
+<!-- ================= NEWSLETTER ================= -->
 
+<section class="pb-28 bg-white dark:bg-black">
 
+    <div class="max-w-6xl mx-auto px-6">
 
-<!-- ================= PHOTOGRAPHER'S NOTE ================= -->
+        <div
+            class="rounded-[45px] bg-gradient-to-r from-[#111111] to-[#2b2b2b] p-14 lg:p-20 text-center text-white">
 
-<section class="relative py-40 overflow-hidden">
+            <span class="uppercase tracking-[5px] text-gray-400">
 
-    <!-- Background Image -->
-
-    <img src="image/p61.jpg"
-        class="absolute inset-0 w-full h-full object-cover">
-
-    <!-- Dark Overlay -->
-
-    <div class="absolute inset-0 bg-black/70"></div>
-
-    <!-- Decorative Circles -->
-
-    <div class="absolute top-16 left-16 w-32 h-32 rounded-full border border-white/20"></div>
-    <div class="absolute bottom-20 right-20 w-52 h-52 rounded-full border border-white/10"></div>
-
-    <!-- Content -->
-
-    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
-
-        <span class="uppercase tracking-[7px] text-gray-300">
-
-            Photographer's Note
-
-        </span>
-
-        <h2 class="font-heading text-5xl lg:text-7xl mt-8 leading-tight">
-
-            "Photography Is The Art
-            Of Preserving Feelings,
-            Not Just Moments."
-
-        </h2>
-
-        <p class="mt-10 text-xl text-gray-300 leading-9 max-w-3xl mx-auto">
-
-            Every image tells a story that words cannot fully express.
-            Our goal has always been to create photographs that bring
-            emotions back to life every time you look at them.
-
-        </p>
-
-        <!-- Signature -->
-
-        <div class="mt-16">
-
-            <img src="images/signature.png"
-                class="mx-auto w-44 opacity-90">
-
-            <p class="mt-4 uppercase tracking-[5px] text-gray-400">
-
-                Founder • LensCraft Studio
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-<!-- ================= BLOG CTA ================= -->
-
-<section class="py-28 bg-white dark:bg-black">
-
-    <div class="max-w-5xl mx-auto px-6">
-
-        <div class="rounded-[40px] bg-[#111111] text-white p-16 text-center">
-
-            <span class="uppercase tracking-[6px] text-gray-400">
-
-                Stay Inspired
+                Stay Connected
 
             </span>
 
-            <h2 class="font-heading text-5xl lg:text-6xl mt-6">
+            <h2 class="font-heading text-5xl lg:text-6xl mt-8">
 
-                Let's Capture
-                Your Story Next
+                Never Miss
+                An Update
 
             </h2>
 
-            <p class="mt-8 text-lg text-gray-300 leading-8 max-w-2xl mx-auto">
+            <p class="max-w-2xl mx-auto mt-8 text-gray-300 leading-8">
 
-                Whether you're planning a wedding, portrait session,
-                commercial campaign or lifestyle shoot, we'd love to
-                create something unforgettable together.
+                Get exclusive photography tips, special offers and
+                early access to seasonal sessions delivered directly
+                to your inbox.
 
             </p>
 
-            <a href="contact.html"
-                class="inline-block mt-12 px-10 py-4 rounded-full bg-white text-black hover:scale-105 transition duration-300">
+            <form class="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
 
-                Book a Session
+                <input type="email"
+                    placeholder="Enter your email"
+                    class="w-full sm:w-[420px] rounded-full px-6 py-4 text-black focus:outline-none">
+
+                <button
+                    class="px-10 py-4 rounded-full bg-white text-black font-semibold hover:scale-105 duration-300">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= BOTTOM CTA ================= -->
+
+<section class="pb-32 bg-white dark:bg-black">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div
+            class="border border-gray-200 dark:border-gray-800 rounded-[40px] p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-10">
+
+            <div>
+
+                <span class="uppercase tracking-[5px] text-gray-500">
+
+                    Ready To Begin?
+
+                </span>
+
+                <h2 class="font-heading text-5xl mt-6">
+
+                    Capture Your
+                    Beautiful Story
+
+                </h2>
+
+                <p class="mt-6 text-gray-600 dark:text-gray-300 leading-8 max-w-xl">
+
+                    Whether it's your wedding, portrait session or special
+                    event, LensCraft is here to transform every moment into
+                    timeless memories.
+
+                </p>
+
+            </div>
+
+            <a href="contact.html"
+                class="px-10 py-5 rounded-full bg-black text-white hover:bg-gray-800 transition duration-300">
+
+                Book Your Session
 
             </a>
 
@@ -803,69 +767,6 @@
     </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
-<!-- ================= BLOG DETAILS HERO ================= -->
-
-<section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
-
-    <!-- Background -->
-
-    <img src="image/p62.jpg"
-        class="absolute inset-0 w-full h-full object-cover">
-
-    <div class="absolute inset-0 bg-black/65"></div>
-
-    <!-- Content -->
-
-    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
-
-        <span class="uppercase tracking-[6px] text-gray-300">
-
-            Photography Journal
-
-        </span>
-
-        <h1 class="font-heading text-6xl lg:text-8xl mt-8 leading-tight">
-
-            The Art Of
-            Capturing
-            Real Emotions
-
-        </h1>
-
-        <div class="flex flex-wrap justify-center gap-8 mt-10 text-gray-300">
-
-            <span>
-                📅 June 18, 2026
-            </span>
-
-            <span>
-                ✍ LensCraft Studio
-            </span>
-
-            <span>
-                ⏱ 8 Min Read
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
 
 
 
