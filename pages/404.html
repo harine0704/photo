@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 - Page Not Found | LensCraft</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ["Cormorant Garamond"],
+                        body: ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-[#111111] dark:text-white font-body transition duration-500">
+
+    <!-- Background -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-[#111111] dark:via-[#181818] dark:to-[#0d0d0d]"></div>
+
+        <div class="absolute -top-32 -left-20 w-96 h-96 bg-amber-300/20 rounded-full blur-3xl"></div>
+
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-200/20 rounded-full blur-3xl"></div>
+
+    </div>
+
+    <!-- Content -->
+
+    <section class="min-h-screen flex items-center justify-center px-6">
+
+        <div class="max-w-3xl text-center">
+
+            <!-- Camera Icon -->
+
+            <div class="mb-8">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-black dark:bg-amber-500/10 flex items-center justify-center">
+
+                    <i class="fa-solid fa-camera-retro text-2xl text-white"></i>
+
+                </div>
+
+            </div>
+
+            <!-- 404 -->
+
+            <h1 class="font-heading text-8xl md:text-9xl font-bold text-black">
+
+                404
+
+            </h1>
+
+            <!-- Heading -->
+
+            <h2 class="mt-6 text-4xl md:text-5xl font-heading">
+
+                Oops! Frame Not Found
+
+            </h2>
+
+            <!-- Text -->
+
+            <p class="mt-6 text-gray-600 dark:text-gray-400 leading-8 max-w-xl mx-auto">
+
+                The page you're looking for seems to have wandered out of focus.
+                Let's help you get back to capturing beautiful moments.
+
+            </p>
+
+            <!-- Buttons -->
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-5 justify-center">
+
+                <a href="../index.html"
+                    class="px-8 py-4 bg-black text-white hover:bg-white hover:text-black rounded-full transition duration-300">
+
+                    <i class="fa-solid fa-house mr-2"></i>
+
+                    Back Home
+
+                </a>
+
+                <a href="portfolio.html"
+                    class="px-8 py-4 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-[#1b1b1b] rounded-full transition duration-300">
+
+                    <i class="fa-solid fa-images mr-2"></i>
+
+                    View Portfolio
+
+                </a>
+
+            </div>
+
+            <!-- Divider -->
+
+            <div class="mt-16 flex justify-center">
+
+                <div class="w-32 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
+
+            </div>
+
+            <!-- Quote -->
+
+            <p class="mt-8 italic text-gray-500 dark:text-gray-500">
+
+                "Every missing frame leads to a better story."
+
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
