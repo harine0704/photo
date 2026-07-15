@@ -75,7 +75,7 @@
 <!-- ================= HEADER ================= -->
 
 <header id="navbar"
-    class="fixed top-0 left-0 w-full z-20 bg-[#111111] dark:bg-black border-b border-white/10 shadow-lg transition-all duration-300">
+class="fixed top-0 left-0 w-full z-50 bg-[#111111] dark:bg-black border-b border-white/10 shadow-lg transition-all duration-300">
 
     <div class="max-w-7xl mx-auto">
 
@@ -428,78 +428,59 @@
 
 <!-- ================= HERO ================= -->
 
-<section class="relative h-screen overflow-hidden">
+<section class="relative min-h-screen overflow-hidden pt-24">
 
-<img src="../assets/image/p1.jpg"
+    <!-- Background Image -->
+    <img src="../assets/image/p1.jpg"
+        alt="Luxury Photography"
+        class="absolute inset-0 w-full h-full object-cover">
 
-alt="Luxury Photography"
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/45"></div>
 
-class="absolute inset-0 w-full h-full object-cover">
+    <!-- Hero Content -->
+    <div class="relative z-10 min-h-[calc(100vh-96px)] flex items-center">
 
-<div class="absolute inset-0 bg-black/45"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full">
 
-<div class="relative z-10 h-full flex items-center">
+            <div class="max-w-3xl">
 
-<div class="max-w-7xl mx-auto px-6 lg:px-10 w-full">
+                <p class="uppercase tracking-[8px] text-white text-sm">
+                    Luxury Photography Studio
+                </p>
 
-<div class="max-w-3xl">
+                <h1 class="font-heading text-white text-6xl lg:text-8xl mt-6 leading-none">
+                    Capturing
+                    <br>
+                    Life's Beautiful
+                    <br>
+                    Moments
+                </h1>
 
-<p
-class="uppercase tracking-[8px] text-white text-sm">
+                <p class="mt-8 text-lg text-gray-200 leading-8 max-w-xl">
+                    Portraits • Weddings • Family • Events • Corporate Photography
+                    crafted with elegance and timeless storytelling.
+                </p>
 
-Luxury Photography Studio
+                <div class="mt-10 flex gap-5 flex-wrap">
 
-</p>
+                    <a href="#portfolio"
+                        class="bg-white text-black px-8 py-4 rounded-full hover:bg-gray-200 transition">
+                        Explore Portfolio
+                    </a>
 
-<h1
-class="font-heading text-white text-6xl lg:text-8xl mt-6 leading-none">
+                    <a href="#contact"
+                        class="border border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition duration-300">
+                        Book Session
+                    </a>
 
-Capturing
+                </div>
 
-<br>
+            </div>
 
-Life's Beautiful
+        </div>
 
-<br>
-
-Moments
-
-</h1>
-
-<p
-class="mt-8 text-lg text-gray-200 leading-8 max-w-xl">
-
-Portraits • Weddings • Family • Events • Corporate Photography
-
-crafted with elegance and timeless storytelling.
-
-</p>
-
-<div class="mt-10 flex gap-5 flex-wrap">
-
-<a href="#portfolio"
-
-class="bg-white text-black px-8 py-4 rounded-full hover:bg-gray-200">
-
-Explore Portfolio
-
-</a>
-
-<a href="#contact"
-
-class="border border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-black duration-300">
-
-Book Session
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
@@ -1442,16 +1423,16 @@ Book Session
 
                 <ul class="space-y-4">
 
-<li><a href="index.html">home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
 
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pages/services.html">Services</a></li>
 
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pages/portfolio.html">Portfolio</a></li>
 
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
 
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
 
                 </ul>
 
